@@ -1,0 +1,123 @@
+
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <script src="../assets/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <title>쌈스 관리자</title>
+ 
+</head>
+
+<body>
+    <div class="wrap">
+<div class="flex">
+    <div class="left-nav">
+        <div class="inner flex_b_s dr-col">
+        <div class="top">
+            <h1 class="logo">
+            <a href="#!"
+                ><img src="../assets/img/logo.png" alt="ssams"
+            /></a>
+            </h1>
+            <nav id="nav">
+            <ul>
+                <li class="""><a href="../main/">메인</a></li>
+                <li class="""><a href="../category/category.html">카테고리 관리</a></li>
+                <li class="""><a href="../product/product.html">상품관리</a></li>
+                <li class="""><a href="../order/">주문관리</a></li>
+                <li class="""><a href="../pay/">정산관리</a></li>
+                <li class="""><a href="../notice/">공지사항</a></li>
+                <li class="""><a href="../management/">웹 관리자</a></li>
+            </ul>
+            </nav>
+        </div>
+        <button class="logout-btn" onclick="location.href='../login/'">로그아웃</button>
+        </div>
+    </div>
+  <div id="container" class="main">
+    <header id="header">
+        <div class="inner flex_e_c">
+          <strong>농업회사법인(주)양념마을</strong>
+          <p>접속일시 : 2023.03.10 11:34</p>
+          <a href="#!" class="setting-btn">설정</a>
+          <a href="#!" class="active">알림</a>
+        </div>
+      </header>
+          <div class="inner">
+            <section class="cateogry_sect">
+              <ul class="category_list_wrap flex__c col_6" style="--mg-t: 2.3076rem; --mg-x: 1.923rem">
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category01.png" alt=""></figure>
+                   <p>야채</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category02.png" alt=""></figure>
+                   <p>특수야채</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category03.png" alt=""></figure>
+                   <p>과일</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category04.png" alt=""></figure>
+                   <p>공산품</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category05.png" alt=""></figure>
+                   <p>축산</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category06.png" alt=""></figure>
+                   <p>수산/건어물</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category07.png" alt=""></figure>
+                   <p>곡류/견과</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category08.png" alt=""></figure>
+                   <p>반찬</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                   <figure><img src="../assets/img/category/category09.png" alt=""></figure>
+                   <p>잡화</p>
+                  </a>
+                </li>
+               
+              </ul>
+            </section>
+         
+          </div>
+        </div>
+  
+    </div>
+    <script>
+        $('.category_list_wrap li').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+  <?include_once "../include/footer"; ?>

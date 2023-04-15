@@ -1,0 +1,100 @@
+.top_content {
+  ul {
+    width: 100%;
+    li {
+      transition: all 0.2s;
+      &.active {
+        a {
+          transition: inherit;
+          background-color: #ffcc50;
+          box-shadow: 0 1.0384rem $px-60 rgba($color: #ffcc50, $alpha: 0.6);
+
+          span {
+            color: #252525;
+            transition: inherit;
+          }
+          .ico {
+            transition: inherit;
+            background-color: #ffe199;
+            background-image: url(/Tstore/assets/img/ico/main_ico01_on.png);
+            &.ico02 {
+              background-image: url(/Tstore/assets/img/ico/main_ico02_on.png);
+            }
+
+            &.ico03 {
+              background-image: url(/Tstore/assets/img/ico/main_ico03_on.png);
+            }
+
+            &.ico04 {
+              background-image: url(/Tstore/assets/img/ico/main_ico04_on.png);
+            }
+          }
+        }
+      }
+      a {
+        display: block;
+        border-radius: $px-30;
+        padding: $px-60 $px-60 $px-50;
+        background-color: #f7f7f7;
+
+        .ico {
+          display: block;
+          width: $px-70;
+          height: $px-70;
+          border-radius: 50%;
+          margin-bottom: $px-40;
+          background: #fff url(/Tstore/assets/img/ico/main_ico01.png) no-repeat center /
+            cover;
+
+          &.ico02 {
+            background-image: url(/Tstore/assets/img/ico/main_ico02.png);
+          }
+
+          &.ico03 {
+            background-image: url(/Tstore/assets/img/ico/main_ico03.png);
+          }
+
+          &.ico04 {
+            background-image: url(/Tstore/assets/img/ico/main_ico04.png);
+          }
+        }
+        h4 {
+          font-size: $px-28;
+        }
+
+        .cost {
+          font-size: $px-32;
+          margin: $px-20 0 $px-10;
+          strong {
+            font-size: $px-48;
+          }
+        }
+        span {
+          display: block;
+          color: #999999;
+        }
+      }
+    }
+  }
+}
+.chart_content{
+    #canvas{
+        font-size: 1rem;
+        width: 100% !important;
+    }
+   
+        .btn-wrap{
+            button{
+            height: $px-60;
+            border-radius: $px-10;
+            font-size: $px-28;
+            padding: 0 $px-30;
+            font-weight: 500;
+
+            &.active{
+                border-color: $point;
+                color: $point;
+            }
+        }
+    }
+}

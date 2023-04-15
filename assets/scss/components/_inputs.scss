@@ -1,0 +1,23 @@
+input::placeholder {
+  color: #dddddd;
+}
+.bs-select,
+.bs-input {
+  height: $input-height;
+  padding: 0 $px-30;
+  border-radius: $px-10;
+  font-size: $px-30;
+  font-weight: 500;
+  background-color: #fff;
+  height: $input-height;
+  
+  &.min-width {
+    min-width: 10rem;
+  }
+  
+}
+.bs-select{
+  padding: 0 $px-40 0 $px-20;
+  background: #fff url(../img/ico/icon-select.png) no-repeat center right $px-20;
+  background-size: $px-24;
+}

@@ -1,0 +1,16 @@
+.hei{
+    display: inline-block;
+   width: 100%;
+   height: 100%;
+    background: no-repeat center center / 0.923rem;
+    &.hei-close{
+        background-image: url(../img/ico/icon-close.png);
+    }
+    &.hei-up{
+        background-image: url(../img/ico/icon-down.png);
+    }
+    &.hei-down{
+        background-image: url(../img/ico/icon-down.png);
+        transform: rotate(180deg);
+    }
+}

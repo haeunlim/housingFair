@@ -1,0 +1,39 @@
+.btn{
+  height:$input-height;   
+  padding: 0 $px-30;
+  border-radius: $px-10;
+  font-size: $px-30;
+  font-weight: 500;
+  background-color: #fff;
+  @include button-size( $btn-padding-x);
+
+  
+}
+
+.ranking_btn_wrap{
+  button{
+    &.active{
+      background-color: $ranking-btn-active-color;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      @include button-variant($value, $value);
+      color: #fff
+    }
+  }
+  
+  @each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
+
+  .btn.square{
+    width: 2.1538rem;
+    height: 2.1538rem;
+    padding: 0;
+  }
+

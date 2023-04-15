@@ -1,0 +1,68 @@
+.logo img {
+  width: 100%;
+}
+.logo {
+  width: 12.88rem;
+  margin: 0 auto 3.461rem;
+}
+
+.login-container {
+  padding-top: 21.582vh;
+  height: 100vh;
+
+  .btn-wrap {
+    margin-top: 3.0769rem;
+    button {
+      width: 100%;
+      height: 4.6153rem;
+      font-size: 1.8461rem;
+      font-weight: 800;
+      font-family: "NanumSquare", sans-serif;
+      @extend %bg-gradient;
+      @extend %box-shadow;
+      border-radius: $border-radius1;
+      border: none;
+      color: #fff;
+    }
+  }
+}
+.login-container label {
+  font-size: 1.384rem;
+  margin-bottom: 1.153rem;
+  font-weight: 500;
+}
+.login-container .inner {
+  width: 30.769rem;
+}
+
+.login-container input[type="email"],
+.login-container input[type="file"] + label,
+.login-container input[type="number"],
+.login-container input[type="tel"],
+.login-container input[type="password"],
+.login-container input[type="text"] {
+  height: 4.615rem;
+  padding-left: 4.615rem;
+  padding-right: 1.1538rem;
+  font-size: 1.6153rem;
+  border-radius: 0.384rem;
+}
+
+.input-wrap {
+  margin-top: 2.307rem;
+}
+.input-row {
+  position: relative;
+}
+.input-row .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.615rem;
+  height: 4.615rem;
+  background: url(/Tstore/assets/img/ico/login_ico_id.png) no-repeat center / 2.307rem;
+}
+.input-row .icon.pw {
+  background-image: url(/Tstore/assets/img/ico/login_ico_pw.png);
+}

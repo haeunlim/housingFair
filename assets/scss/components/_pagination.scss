@@ -1,0 +1,29 @@
+.pagination {
+  margin-top: $px-30;
+  .paginate_button {
+      width: $input-height;
+      border-radius: 50%;
+      padding: 0;
+      border-width: 0;
+      text-align: center;
+      color: $gray-999;
+      font-size: $px-34;
+      font-weight: 500;
+
+      &+*{
+        margin-left:  0.2692rem;
+      }
+    &.active {
+        border-width: 1px;
+        color: $dark;
+    }
+    &.next,
+    &.previous{
+        background: url(../img/ico/prev_arrow.png) no-repeat center / $px-16 auto;
+    }
+    &.next{
+      background-image: url(../img/ico/next_arrow.png);
+    }
+  }
+  
+}

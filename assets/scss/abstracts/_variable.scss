@@ -1,0 +1,429 @@
+// Color system
+$bg-fafa: #fafafa !default;
+$bg-f9f9: #f9f9f9 !default;
+$bg-f5f5: #f5f5f5 !default;
+$bg-f4f4: #f4f4f4 !default;
+$bg-f2f2: #f2f2f2 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$bg: (
+    "100": $bg-fafa,
+    "200": $bg-f9f9,
+    "300": $bg-f5f5,
+    "400": $bg-f4f4,
+    "500": $bg-f2f2,
+    "gradient-color": "rgb(255, 150, 0)",
+    "moz-gradien": "-moz-linear-gradient( 100deg, rgba(255, 150, 0, 1) 0%, rgba(248, 54, 0, 1) 100% )",
+    "webkit-gradien": "-webkit-linear-gradient( 100deg, rgba(255, 150, 0, 1) 0%, rgba(248, 54, 0, 1) 100% )",
+    "gradient": "linear-gradient( 100deg, rgba(255, 150, 0, 1) 0%, rgba(248, 54, 0, 1) 100% )",
+    "filter-gradien":" progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9600",endColorstr="#f83600",GradientType=1)"
+) !default;
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-eee: #eeeeee !default;
+$gray-dbdb: #dbdbdb !default;
+$gray-bbb: #bbbbbb !default;
+$gray-999: #999999 !default;
+$gray-7575: #757575 !default;
+$gray-666: #666666 !default;
+$gray-4545: #454545 !default;
+$gray-333: #333333 !default;
+$gray-2525: #252525 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+    "100": $gray-eee,
+    "200": $gray-dbdb,
+    "300": $gray-bbb,
+    "400": $gray-999,
+    "500": $gray-7575,
+    "600": $gray-666,
+    "700": $gray-4545,
+    "800": $gray-333,
+    "900": $gray-2525,
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+// scss-docs-end color-variables
+$point:     #4eba57;
+$point2: #101b58 !default;
+$blue: #aadeff !default;
+$red: #ff0000 !default;
+$yellow: #ff0 !default;
+
+$purple:     #54247D;
+$pink:       #ff679b;
+$light-red:        #FFE9E9;
+$light-red2:        #FDFBFB;
+$orange:     #fd7e14;
+$tangerine:     #FFB470;
+$lemon:      #E7F267;
+$lavender:       #BDC3FF;
+$skyBlue:       #A3DEE2;
+$deepNight:       #54247D;
+$darkGreen:       #878D00;
+$brown:       #A56232;
+$darkBlue:       #065F67;
+$dark:#252525;
+$ranking-btn-active-color: #ebeff5;
+// scss-docs-start colors-map
+$colors: (
+    "point": $point,
+    "point2": $point2,
+    "red":$red,
+    "blue":$blue,
+    "yellow":$yellow,
+    "white": $white,
+    "dakr2": $gray-4545,
+    "dark": $gray-2525,
+) !default;
+// scss-docs-end colors-map
+$numbers: (
+    "10":10%,"20":20%,"30":30%,"40":40%,"50":50%,"60":60%,"70":70%,"80":80%,"90":90%,"100":100%,"auto":auto
+) !default;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "point":    $point,
+  "primary":    $point,
+  "secondary":  $gray-dbdb,
+  "lemon":     $lemon,
+  "purple":    $purple,
+  "tangerine":    $tangerine,
+  "orange":    $orange,
+  "darkBlue":    $darkBlue,
+  "brown":    $brown,
+  "deepNight":    $deepNight,
+  "skyBlue":    $skyBlue,
+  "darkGreen":    $darkGreen,
+  "light":    $gray-dbdb,
+  "gray":      $gray-999,
+  "gray2":      $gray-7575,
+  "dark":       $dark
+);
+
+$color-contrast-dark:      $black !default;
+$color-contrast-light:     $white !default;
+
+
+
+$min-contrast-ratio:   4.5 !default;
+
+
+$variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix !default;
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Noto Sans KR", sans-serif !default;
+$font-family-lato: "Lato", sans-serif !default;
+$font-family-nanum: "NanumSquare", sans-serif !default;
+// stylelint-enable value-keyword-case
+$font-family-base: var(--#{$prefix}font-sans-serif) !default;
+$font-family-code: var(--#{$prefix}font-point) !default;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$fw-lighter: lighter !default;
+$fw-light: 300 !default;
+$fw-normal: 400 !default;
+$fw-medium: 500 !default;
+$fw-semibold: 600 !default;
+$fw-bold: 700 !default;
+$fw-bolder: bolder !default;
+
+$fw-base: $fw-normal !default;
+
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+) !default;
+// scss-docs-end font-sizes
+
+$variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix !default;
+
+// scss-docs-start box-shadow-variables
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
+// scss-docs-end box-shadow-variables
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+) !default;
+
+$position-values: (
+    0: 0,
+    50: 50%,
+    100: 100%,
+) !default;
+
+$body-bg: $white !default;
+$body-color: $gray-2525 !default;
+$body-text-align: null !default;
+$border-color: $gray-dbdb !default;
+
+$tablet: 1024px;
+$mobile: 851px;
+$basic-font: "Noto Sans KR", sans-serif;
+$point-font: "yg-jalnan", sans-serif;
+
+$palceholder-color: $gray-bbb;
+
+$table-th-color: #e3e7ef;
+$table-th-border-color: #b2bcd0;
+$table-td-color: #f8f9fd;
+
+
+$bg-color-gray: #f6f6f6;
+$bg-color-gray2: #f9f9f9;
+$chk-w1: 20px;
+$chk-w2: 20px;
+$rdo-w1: 16px;
+$rdo-in-w1: 9.6px;
+$kakao-bg: #f9e000;
+$kakao-text: #381e1f;
+
+$header-height:100px;
+$gutters: $spacers !default;
+// font-size
+$html-font-size-pc: 16px;
+$html-font-size-mo: 13px;
+
+$border-radius-sm: 5px;
+$border-radius1:10px !default;
+$border-radius2:20px !default;
+$border-radius3: 30px !default;
+
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-x:         30px !default;
+$input-btn-font-family:       null !default;
+$input-btn-font-size:         $font-size-base !default;
+$input-btn-line-height:       $line-height-base !default;
+$input-height:52px !default;
+
+
+$input-btn-padding-x-sm:      20px !default;
+$input-btn-font-size-sm:      $font-size-sm !default;
+
+$input-btn-padding-x-lg:      5px !default;
+$input-btn-font-size-lg:      $font-size-lg !default;
+$input-btn-border-radius:           $border-radius1 !default;
+$input-btn-border-radius-sm:        $border-radius-sm !default;
+$input-btn-border-radius-lg:        $border-radius2 !default;
+// scss-docs-end input-btn-variables
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+// scss-docs-start btn-variables
+$btn-padding-x:               $input-btn-padding-x !default;
+$btn-font-family:             $input-btn-font-family !default;
+$btn-font-size:               $input-btn-font-size !default;
+$btn-line-height:             $input-btn-line-height !default;
+$btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
+
+$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-font-size-sm:            $input-btn-font-size-sm !default;
+
+$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+$btn-font-size-lg:            $input-btn-font-size-lg !default;
+
+$btn-border-radius:           $border-radius1 !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-lg:        $border-radius2 !default;
+
+// main visual text
+$ttl-big-top-pc: 120px;
+$ttl-big-pc: 62px;
+$ttl-big-bot-pc: 28px;
+
+$ttl-pc: 72px;
+$ttl-top-pc: 22px;
+
+$ttl-bot-pc: 0.95rem;
+$ttl-small-pc: 1.3rem;
+
+$gnb-txt-pc: 20px;
+$cont-ttl-pc: 1.2rem;
+$f-fs-pc: 0.7rem;
+
+$list-subject-pc: 22px;
+$list-date-pc: 18px;
+
+$list-subject-pc: 22px;
+$list-date-pc: 18px;
+$list-date-color: $gray-999;
+
+
+$ttl-big-top-mo: 120px;
+$ttl-big-mo: 62px;
+$ttl-big-bot-mo: 28px;
+
+$ttl-mo: 72px;
+$ttl-top-mo: 22px;
+
+$ttl-bot-mo: 0.95rem;
+$ttl-small-mo: 1.3rem;
+
+$gnb-txt-mo: 20px;
+$cont-ttl-mo: 1.2rem;
+$f-fs-mo: 0.7rem;
+
+$list-subject-mo: 22px;
+$list-date-mo: 18px;
+
+
+$container-padding: 0;
+%basic-txt {
+    font-size: $html-font-size-pc;
+}
+
+%ttl-big {
+    font-size: $ttl-big-pc;
+}
+
+%ttl-small {
+    font-size: $ttl-small-pc;
+}
+
+%ttl-big-bot {
+    font-size: $ttl-big-bot-pc;
+}
+
+%ttl {
+    font-size: $ttl-pc;
+}
+
+%bg-text {
+    font-size: $bg-text-pc;
+}
+
+%ttl-top {
+    font-size: $ttl-top-pc;
+}
+
+%ttl-bot,
+%ttl-box-num {
+    font-size: $ttl-bot-pc;
+}
+%bodyPropertyDefault {
+    word-break: keep-all;
+    letter-spacing: -0.04em;
+}
+
+%gnb-txt {
+    font-size: $gnb-txt-pc;
+}
+
+%cont-ttl {
+    font-size: $cont-ttl-pc;
+}
+
+%footer-txt {
+    font-size: $f-fs-pc;
+}
+
+%flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    display: -ms-flexbox;
+}
+
+%jc-space-between {
+    justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+}
+%jc-space-around {
+    justify-content: space-around;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+}
+%jc-center {
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+%jc-end {
+    justify-content: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+}
+%align-items-start {
+    align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+}
+%align-items-center {
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+%align-items-end {
+    align-items: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+}
+
+%fw-nowrap {
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+%bg-gradient {
+    background: var( --bs-bg-gradient-color);
+    background:var(--bs-bg-moz-gradient);
+    background: var(--bs-bg-webkit-gradient);
+    background: var(--bs-bg-gradient);
+    filter:var(--bs-bg-filter-gradient);
+    border-radius: $border-radius1;
+    border: none;
+    color:#fff;
+}
+%box-shadow{
+    box-shadow: 0 0.3076rem 0.46153rem  rgba($color: $point, $alpha: 0.32);
+
+}

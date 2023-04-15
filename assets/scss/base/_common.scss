@@ -1,0 +1,11 @@
+.cost{
+    strong{
+        font-family: $font-family-lato;
+        font-weight: 700;
+    }
+}
+.btn-wrap{
+    *+*{
+        margin-left: $px-15;
+    }
+}
